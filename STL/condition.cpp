@@ -8,18 +8,18 @@ int main()
 
     // Checking if all elements are positive
     all_of(ar, ar+6, [](int x) { return x>0; })?
-          cout << "\nAll are positive elements" :
-          cout << "\nAll are not positive elements";
+          cout << "All are positive elements" :
+          cout << "All are not positive elements";
 
     // Checking if any element is negative
     any_of(ar, ar+6, [](int x){ return x<0; })?
-          cout << "\nThere exists a negative element" :
-          cout << "\nAll are positive elements";
+          cout << "There exists a negative element" :
+          cout << "All are positive elements";
 
     // Checking if no element is negative
     none_of(ar, ar+6, [](int x){ return x<0; })?
-          cout << "\nNo negative elements" :
-          cout << "\nThere are negative elements";
+          cout << "No negative elements" :
+          cout << "There are negative elements";
 
     return 0;
 

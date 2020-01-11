@@ -6,13 +6,11 @@ struct Interval
 {
     int start, end;
 };
-
 // Compares two intervals according to staring times.
 bool compareInterval(Interval i1, Interval i2)
 {
     return (i1.start < i2.start);
 }
-
 int main()
 {
     Interval arr[] =  { {6,8}, {1,9}, {2,4}, {4,7} };
